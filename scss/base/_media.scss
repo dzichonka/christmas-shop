@@ -1,0 +1,194 @@
+@media (hover: hover) {
+  .btn {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: $static-white;
+      color: $dark;
+    }
+  }
+
+  .menu__item {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    // &:not(.hover-unset):hover {
+    //   color: $primary;
+    //   background-color: $primary-10;
+    // }
+    &:hover {
+      color: $primary;
+
+      background-color: $primary-10;
+    }
+  }
+
+  .tabs__item {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background: $static-white-20;
+    }
+  }
+
+  .cards__item {
+    cursor: pointer;
+
+    .card__name {
+
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      .card__name {
+        color: $primary;
+      }
+    }
+  }
+
+  .arrow_active {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+
+    &:hover {
+      background-color: $static-white;
+      color: $primary;
+    }
+  }
+
+  .contact__block {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+
+  .social__link {
+    svg {
+      path {
+        transition: all 0.5s ease;
+      }
+    }
+
+    cursor: pointer;
+
+    &:hover {
+      color: $primary;
+
+      svg {
+        path {
+          stroke: $primary;
+        }
+      }
+    }
+  }
+
+  .link {
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+
+@media (max-width: 1439px) {
+  // body {
+  //   background-color: $primary;
+  // }
+
+  .home-page {
+    .cards {
+      max-width: 700px;
+    }
+  }
+
+}
+
+@media (max-width: 1120px) {
+
+  header,
+  section,
+  footer {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .contact {
+    flex-direction: column;
+
+    >* {
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+  }
+
+  .burger-menu {
+    display: block;
+  }
+
+  .up {
+    &.visible {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    &__container {
+      flex-direction: column;
+
+      &>* {
+        flex-basis: auto;
+      }
+    }
+
+    &__article {
+      padding: 60px 20px;
+    }
+  }
+
+  .tabs {
+    justify-content: space-between;
+    gap: 0;
+
+    &__item {
+      padding: 12px 8px;
+    }
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .modal {
+    &__window {
+      width: 364px;
+    }
+  }
+}
+
+@media (max-width: 379px) {
+
+  .modal {
+    &__window {
+      max-width: 310px;
+    }
+  }
+}

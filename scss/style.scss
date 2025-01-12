@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Montserrat:wght@100..900&display=swap');
+
+@import 'base/variables';
+@import 'base/mixins';
+@import 'base/base';
+
+
+@import 'blocks/0burger';
+@import 'blocks/0header';
+@import 'blocks/1hero';
+
+@import 'blocks/1about';
+@import 'blocks/1slider';
+@import 'blocks/1best';
+
+@import 'blocks/0card';
+@import 'blocks/0modal';
+
+@import 'blocks/1cta';
+@import 'blocks/1timer';
+
+@import 'blocks/2gifts';
+@import 'blocks/2tabs';
+@import 'blocks/2up';
+
+@import 'blocks/0footer';
+
+
+@import 'base/media';

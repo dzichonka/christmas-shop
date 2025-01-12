@@ -1,0 +1,45 @@
+header {
+  z-index: 10;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  padding: 0 82px;
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 20px;
+    text-decoration: none;
+
+    &__img {
+      width: 24px;
+      height: 24px;
+    }
+
+    &__text {
+      @include action_s;
+      color: $dark;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+
+  &__item {
+    @include btn_nav;
+
+    &.hover-unset {
+      background-color: $primary-10;
+      color: $primary;
+      cursor: default;
+    }
+  }
+}

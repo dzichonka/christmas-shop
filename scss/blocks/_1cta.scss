@@ -1,0 +1,36 @@
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 0px;
+  padding: 60px 0;
+  //height: 668px;
+  border-radius: 0 0 20px 20px;
+  background-image: url("../assets/image/bg/bg-forest.png"), url("../assets/image/bg/bg-snow.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover; // contain - fully visible,cover - cover container
+  background-position: top center, center; // 1 - vertical, 2 - horizontal
+
+  &__container {
+    //height: 428px;
+    color: $static-white;
+    max-width: 420px;
+    padding: 120px 0;
+    //height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  &__timer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 8px;
+  }
+}

@@ -1,0 +1,19 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 8px;
+
+  &__item {
+    @include action_s;
+    border-radius: 12px;
+    padding: 12px 20px;
+    color: $static-white;
+
+    &.active {
+      background: $static-white-20;
+      pointer-events: none;
+    }
+  }
+}

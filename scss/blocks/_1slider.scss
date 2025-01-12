@@ -1,0 +1,66 @@
+.slider {
+  overflow-x: hidden;
+  display: flex;
+  //align-items: center;
+  //justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+    transition: all 0.5s ease;
+  }
+
+  &__elem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  &__descr {
+    @include slider_text;
+  }
+
+  &__img {
+    border-radius: 20px;
+    width: 200px;
+    height: 200px;
+  }
+
+  &__controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  border: 1px solid $static-white;
+  border-radius: 20px;
+  width: 56px;
+  height: 56px;
+
+  &_active {
+    color: $static-white;
+    border: 1px solid $static-white;
+    background-color: transparent;
+  }
+
+  &_inactive {
+    color: $static-white-40;
+    border: 1px solid $static-white-40;
+    background-color: transparent;
+  }
+}

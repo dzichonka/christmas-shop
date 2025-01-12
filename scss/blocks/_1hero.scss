@@ -1,0 +1,21 @@
+.hero {
+  background-image: url("../assets/image/bg/bg-ball.png"), url("../assets/image/bg/bg-snow.png");
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover; // contain - fully visible,cover - cover container
+  background-position: center, center; // 1 - vertical, 2 - horizontal
+  border-radius: 20px 20px 0 0;
+  padding: 60px 8px;
+  //height: 524px;
+
+  &__container {
+    color: $static-white;
+    padding: 60px 0;
+    //height: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

@@ -1,0 +1,28 @@
+.timer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 0px;
+  border-radius: 20px;
+  padding: 8px 12px 12px 12px;
+  width: 344px;
+  height: 72px;
+  background: $static-white-40;
+
+  &__block {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+    width: 80px;
+    height: 52px;
+  }
+
+  &__dash {
+    height: 20px;
+    width: 1px;
+    background-color: $static-white-40;
+  }
+}

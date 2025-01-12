@@ -1,0 +1,44 @@
+.about {
+  &__container {
+    background-color: $static-white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 20px;
+
+    &>* {
+      flex: 1 1 50%;
+      // flex-grow: 1;
+      // flex-shrink: 1;
+      // flex-basis: 50%;
+      box-sizing: border-box;
+    }
+  }
+
+  &__article {
+    //max-width: 550px;
+    padding: 60px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    p {
+      max-width: 426px;
+    }
+  }
+
+  .section-title {
+    color: $primary;
+  }
+
+  &__img {
+    background-image: url("../assets/image/santa.png");
+    background-position: center; // 1 - vertical, 2 - horizontal
+    background-size: cover; // contain - fully visible,cover - cover container
+    border-radius: 20px;
+    //width: 638px;
+    height: 528px;
+  }
+}

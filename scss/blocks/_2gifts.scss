@@ -1,0 +1,12 @@
+.gifts {
+  background-image: url("../assets/image/bg/bg-garland.png");
+  background-repeat: no-repeat;
+  background-size: contain; // contain - fully visible,cover - cover container
+  background-position: top center; // 1 - vertical, 2 - horizontal
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 20px;
+}

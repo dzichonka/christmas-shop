@@ -1,0 +1,91 @@
+.modal {
+  padding: 0px 8px;
+  z-index: 99;
+  background: rgba(24, 28, 41, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+
+  // &.closed {
+  //   display: none;
+  // }
+
+  &__window {
+    position: relative;
+    width: 400px;
+    min-height: 514px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    .close-icon {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      cursor: pointer;
+    }
+  }
+}
+
+.superpowers {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 0px;
+  }
+
+  &__item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 12px;
+
+    .points {
+      margin-left: auto;
+    }
+  }
+}
+
+.snowflakes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 8px;
+
+  svg {
+    path {
+      fill: $primary-10;
+    }
+  }
+
+
+
+  &__item {
+    height: 16px;
+    width: 16px;
+
+    &.active {
+      svg {
+        path {
+          fill: $primary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.up {
+  display: none;
+  border: 1px solid $primary;
+  border-radius: 100px;
+  width: 56px;
+  height: 56px;
+  align-items: center;
+  justify-content: center;
+  background: $static-white;
+  position: fixed;
+  z-index: 98;
+  right: 10px;
+  bottom: 10px;
+}
