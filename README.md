@@ -2,4 +2,4 @@
 
 ## deployments of projects:
 
-* [Christmas shop](https://rolling-scopes-school.github.io/dzichonka-JSFE2024Q4/christmas-shop/)
+* [Christmas shop](https://dzichonka.github.io/christmas-shop/)
